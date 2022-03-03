@@ -1,7 +1,22 @@
-<script setup>
+<script>
+// import PlanetDescription from '@/components/PlanetDescription.vue';
+// import PlanetInformation from '@/components/PlanetInformation.vue';
 import { mercury } from '@/stores/planets.js';
 
-
+export default {
+    data() {
+        return {
+            planetName: mercury.planetName,
+            planetDescription: mercury.overview.content,
+            planetInfoSourceHref: mercury.overview.source,
+            planetSvgFile: mercury.images.planet,
+            rotationTime: mercury.rotation,
+            revolutionTime: mercury.revolution,
+            planetRadius: mercury.radius,
+            averageTemp: mercury.temperature,
+        };
+    },
+}
 </script>
 
 <template>
@@ -14,8 +29,8 @@ import { mercury } from '@/stores/planets.js';
     <div class="container">
         <section class="planet-description">
             <div class="image-wrapper">
-                <span class="icon icon-planet">{{ planetSvgFile }}</span>
-                <img src="{{ geologySrc }}" alt="{{ geologyAltText }}" class="image image--planet-geology">
+                <span class="icon icon-planet" v-html="planetSvgFile"></span>
+                <!-- <img src="{{ geologySrc }}" alt="{{ geologyAltText }}" class="image image--planet-geology"> -->
             </div>
             <div class="text-wrapper">
                 <h1>{{ planetName }}</h1>
@@ -47,3 +62,7 @@ import { mercury } from '@/stores/planets.js';
         </section>
     </div>
 </template>
+
+<style scoped>
+
+</style>

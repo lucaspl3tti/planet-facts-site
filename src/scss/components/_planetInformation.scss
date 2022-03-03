@@ -1,0 +1,55 @@
+.planet-information {
+    .information {
+        &__content-block {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 48px;
+            border: 1px solid $color-light-gray;
+            margin-bottom: 8px;
+
+            p,
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+        &__headline {
+            font-size: $font-size-small-mobile;
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            color: $color-light-gray;
+        }
+
+        &__text {
+            text-transform: uppercase;
+            line-height: normal;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .planet-information {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+
+        .container {
+            padding: 15px;
+        }
+
+        .information {
+            &__content-block {
+                height: 88px;
+                flex-flow: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            &__text {
+                font-size: 24px;
+            }
+        }
+    }
+}

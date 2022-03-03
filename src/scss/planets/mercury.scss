@@ -1,0 +1,12 @@
+.planet-detailpage--mercury {
+    .planet-nav .btn--active {
+        border-bottom: 4px solid $color-light-blue;
+    }
+
+    .planet-description {
+        .image-wrapper .image {
+            width: 111px;
+            height: 111px;
+        }
+    }
+}

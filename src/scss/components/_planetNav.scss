@@ -1,0 +1,67 @@
+.planet-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100vw;
+    height: 50px;
+
+    .btn {
+        height: 100%;
+        width: fit-content;
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        font-size: 9px;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: 1.93px;
+        line-height: 25px;
+    }
+}
+
+.planet-nav--mobile {
+    border-bottom: 1px solid $color-light-gray;
+
+    .btn--active {
+        border-bottom: 4px solid $color-white;
+    }
+}
+
+@media (min-width: 768px) {
+    .planet-nav--desktop {
+        height: auto;
+        flex-flow: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 15px;
+
+        .btn {
+            width: 281px;
+            height: 40px;
+            border: 1px solid $color-light-gray;
+            border-radius: 0;
+            padding: 5px 20px;
+            text-align: left;
+
+            &--active {
+                background-color: #fff;
+                color: $color-text-dark;
+            }
+
+            &:hover {
+                background-color: $color-gray-blue;
+                border-color: $color-gray-blue;
+            }
+        }
+
+        .btn--number {
+            margin-right: 12px;
+            font-weight: $font-weight-bold;
+            color: $color-gray;
+        }
+
+        .btn--title {
+            font-weight: $font-weight-bold;
+        }
+    }
+}

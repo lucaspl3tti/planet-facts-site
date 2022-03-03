@@ -1,14 +1,14 @@
 <script>
 import PlanetDescription from '@/components/PlanetDescription.vue';
 import PlanetInformation from '@/components/PlanetInformation.vue';
-import { mercury } from '@/stores/planets.js';
+import { saturn } from '@/stores/planets.js';
 
-const planet = mercury;
+const planet = saturn;
 
 export default {
     data() {
         return {
-            planetClass: 'planet-detailpage planet-detailpage--mercury',
+            planetClass: 'planet-detailpage planet-detailpage--saturn',
             planetClassSurface: 'planet-detailpage--surface',
             planetName: planet.planetName,
             planetDescription: planet.overview.content,

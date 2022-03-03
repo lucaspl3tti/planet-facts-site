@@ -21,24 +21,24 @@ defineProps({
 
 <template>
     <section class="planet-information">
-        <div class="information__rotation-time">
+        <div class="container information__content-block information__rotation-time">
             <p class="information__headline">Rotation Time</p>
-            <p class="information__text">{{ rotationTime }}</p>
+            <h2 class="information__text">{{ rotationTime }}</h2>
         </div>
 
-        <div class="information__revolution-time">
+        <div class="container information__content-block information__revolution-time">
             <p class="information__headline">Revolutions Time</p>
-            <p class="information__text">{{ revolutionTime }}</p>
+            <h2 class="information__text">{{ revolutionTime }}</h2>
         </div>
 
-        <div class="information__radius">
+        <div class="container information__content-block information__radius">
             <p class="information__headline">Radius</p>
-            <p class="information__text">{{ planetRadius }}</p>
+            <h2 class="information__text">{{ planetRadius }}</h2>
         </div>
 
-        <div class="information__average-temp">
+        <div class="container information__content-block information__average-temp">
             <p class="information__headline">Average Temp.</p>
-            <p class="information__text">{{ averageTemp }}</p>
+            <h2 class="information__text">{{ averageTemp }}</h2>
         </div>
     </section>
 </template>

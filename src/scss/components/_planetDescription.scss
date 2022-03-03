@@ -1,0 +1,401 @@
+.planet-description {
+    margin-top: 25px;
+
+    .image-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 256px;
+        height: 256px;
+        margin: 0 auto;
+
+        .image--planet-geology {
+            position: absolute;
+            width: 40%;
+            top: 150px;
+        }
+    }
+
+    .text-wrapper {
+        text-align: center;
+    }
+
+    &__heading {
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    &__copy {
+        margin-bottom: 30px;
+    }
+
+    &__source {
+        color: $color-light-gray;
+
+        .bi {
+            margin-left: 5px;
+        }
+    }
+}
+
+// define the different planet sizes
+.planet-description .image-wrapper {
+    &.image-wrapper--mercury {
+        .image--planet {
+            width: 111px;
+            height: 111px;
+        }
+    }
+
+    &.image-wrapper--venus {
+        .image--planet {
+            width: 154px;
+            height: 154px;
+        }
+    }
+
+    &.image-wrapper--earth {
+        .image--planet {
+            width: 173px;
+            height: 173px;
+        }
+    }
+
+    &.image-wrapper--mars {
+        .image--planet {
+            width: 129px;
+            height: 129px;
+        }
+    }
+
+    &.image-wrapper--jupiter {
+        .image--planet {
+            width: 224px;
+            height: 224px;
+        }
+    }
+
+    &.image-wrapper--saturn {
+        .image--planet {
+            width: 256px;
+            height: 256px;
+        }
+    }
+
+    &.image-wrapper--uranus {
+        .image--planet {
+            width: 176px;
+            height: 176px;
+        }
+    }
+
+    &.image-wrapper--neptune {
+        .image--planet {
+            width: 173px;
+            height: 173px;
+        }
+    }
+}
+
+// Define specific btn backgrounds for the planets
+.planet-detailpage {
+    &--mercury {
+        .planet-nav .btn--active {
+            border-color: $color-light-blue;
+        }
+    }
+
+    &--venus {
+        .planet-nav .btn--active {
+            border-color: $color-dark-yellow;
+        }
+    }
+
+    &--earth {
+        .planet-nav .btn--active {
+            border-color: $color-purple;
+        }
+    }
+
+    &--mars {
+        .planet-nav .btn--active {
+            border-color: $color-dark-orange;
+        }
+    }
+
+    &--jupiter {
+        .planet-nav .btn--active {
+            border-color: $color-red;
+        }
+    }
+
+    &--saturn {
+        .planet-nav .btn--active {
+            border-color: $color-orange;
+        }
+    }
+
+    &--uranus {
+        .planet-nav .btn--active {
+            border-color: $color-sea-green;
+        }
+    }
+
+    &--neptune {
+        .planet-nav .btn--active {
+            border-color: $color-blue;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .planet-description {
+        &__right {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .image-wrapper {
+            width: 422px;
+            height: 422px;
+
+            .image--planet-geology {
+                top: 215px;
+            }
+        }
+
+        .text-wrapper,
+        .planet-nav--desktop {
+            flex: 0 0 50%;
+        }
+
+        .text-wrapper {
+            text-align: left;
+        }
+    }
+
+    // define the different planet sizes
+    .planet-description .image-wrapper {
+        &.image-wrapper--mercury {
+            .image--planet {
+                width: 184px;
+                height: 184px;
+            }
+        }
+
+        &.image-wrapper--venus {
+            .image--planet {
+                width: 253px;
+                height: 253px;
+            }
+        }
+
+        &.image-wrapper--earth {
+            .image--planet {
+                width: 285px;
+                height: 285px;
+            }
+        }
+
+        &.image-wrapper--mars {
+            .image--planet {
+                width: 213px;
+                height: 213px;
+            }
+        }
+
+        &.image-wrapper--jupiter {
+            .image--planet {
+                width: 369px;
+                height: 369px;
+            }
+        }
+
+        &.image-wrapper--saturn {
+            .image--planet {
+                width: 422px;
+                height: 422px;
+            }
+        }
+
+        &.image-wrapper--uranus {
+            .image--planet {
+                width: 290px;
+                height: 290px;
+            }
+        }
+
+        &.image-wrapper--neptune {
+            .image--planet {
+                width: 285px;
+                height: 285px;
+            }
+        }
+    }
+
+    // Define specific btn backgrounds for the planets
+    .planet-detailpage--mercury {
+        .btn--active {
+            background-color: $color-light-blue;
+            color: $color-text;
+            border-color: $color-light-blue;
+        }
+    }
+
+    .planet-detailpage--venus {
+        .btn--active {
+            background-color: $color-dark-yellow;
+            color: $color-text;
+            border-color: $color-dark-yellow;
+        }
+    }
+
+    .planet-detailpage--earth {
+        .btn--active {
+            background-color: $color-purple;
+            color: $color-text;
+            border-color: $color-purple;
+        }
+    }
+
+    .planet-detailpage--mars {
+        .btn--active {
+            background-color: $color-dark-orange;
+            color: $color-text;
+            border-color: $color-dark-orange;
+        }
+    }
+
+    .planet-detailpage--jupiter {
+        .btn--active {
+            background-color: $color-red;
+            color: $color-text;
+            border-color: $color-red;
+        }
+    }
+
+    .planet-detailpage--saturn {
+        .btn--active {
+            background-color: $color-orange;
+            color: $color-text;
+            border-color: $color-orange;
+        }
+    }
+
+    .planet-detailpage--uranus {
+        .btn--active {
+            background-color: $color-sea-green;
+            color: $color-text;
+            border-color: $color-sea-green;
+        }
+    }
+
+    .planet-detailpage--neptune {
+        .btn--active {
+            background-color: $color-blue;
+            color: $color-text;
+            border-color: $color-blue;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .planet-description {
+        display: flex;
+        flex-flow: row wrap;
+
+        &__right {
+            flex-flow: column;
+            flex: 0 0 40%;
+            max-width: 40%;
+            max-height: 666px;
+            padding-bottom: 50px;
+        }
+
+        .image-wrapper {
+            flex: 0 0 60%;
+            width: 666px;
+            height: 666px;
+            margin: 0;
+
+            .image--planet-geology {
+                width: 20%;
+                top: 400px;
+            }
+        }
+
+        .text-wrapper,
+        .planet-nav--desktop {
+            flex: auto;
+            max-width: 100%;
+        }
+
+        .planet-nav--desktop {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &__heading {
+            margin-bottom: 22px;
+        }
+    }
+
+    // define the different planet sizes
+    .planet-description .image-wrapper {
+        &.image-wrapper--mercury {
+            .image--planet {
+                width: 290px;
+                height: 290px;
+            }
+        }
+
+        &.image-wrapper--venus {
+            .image--planet {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        &.image-wrapper--earth {
+            .image--planet {
+                width: 450px;
+                height: 450px;
+            }
+        }
+
+        &.image-wrapper--mars {
+            .image--planet {
+                width: 336px;
+                height: 336px;
+            }
+        }
+
+        &.image-wrapper--jupiter {
+            .image--planet {
+                width: 582px;
+                height: 582px;
+            }
+        }
+
+        &.image-wrapper--saturn {
+            .image--planet {
+                width: 666px;
+                height: 666px;
+            }
+        }
+
+        &.image-wrapper--uranus {
+            .image--planet {
+                width: 458px;
+                height: 458px;
+            }
+        }
+
+        &.image-wrapper--neptune {
+            .image--planet {
+                width: 450px;
+                height: 450px;
+            }
+        }
+    }
+}

@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import Mercury from '../views/Mercury.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,16 +6,43 @@ const router = createRouter({
     {
       path: '/',
       name: 'mercury',
-      component: Mercury
+      component: () => import('../views/Mercury.vue'),
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
+      path: '/venus',
+      name: 'venus',
+      component: () => import('../views/Venus.vue')
+    },
+    {
+        path: '/earth',
+        name: 'earth',
+        component: () => import('../views/Earth.vue')
+    },
+    {
+        path: '/mars',
+        name: 'mars',
+        component: () => import('../views/Mars.vue')
+    },
+    {
+        path: '/jupiter',
+        name: 'jupiter',
+        component: () => import('../views/Jupiter.vue')
+    },
+    {
+        path: '/saturn',
+        name: 'saturn',
+        component: () => import('../views/Saturn.vue')
+    },
+    {
+        path: '/uranus',
+        name: 'uranus',
+        component: () => import('../views/Uranus.vue')
+    },
+    {
+        path: '/neptune',
+        name: 'neptune',
+        component: () => import('../views/Neptune.vue')
+    },
   ]
 })
 

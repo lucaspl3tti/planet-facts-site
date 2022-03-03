@@ -172,6 +172,21 @@
         .text-wrapper {
             text-align: left;
         }
+
+        &__source {
+            a {
+                .bi::before {
+                    transform: scale(1);
+                    transition: transform .33s;
+                }
+
+                &:hover {
+                    .bi::before {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
     }
 
     // define the different planet sizes

@@ -47,6 +47,11 @@
                 background-color: #fff;
                 color: $color-text-dark;
             }
+
+            &:hover {
+                background-color: $color-gray-blue;
+                border-color: $color-gray-blue;
+            }
         }
 
         .btn--number {

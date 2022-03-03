@@ -15,6 +15,8 @@
     }
 
     .navbar-toggler {
+        border: 0;
+
         &:focus {
             box-shadow: none;
         }
@@ -132,6 +134,63 @@
                 font-size: 11px;
                 letter-spacing: 1px;
                 color: $color-gray;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #app {
+        .navbar {
+            .container-fluid {
+                justify-content: space-between;
+            }
+
+            .collapse {
+                position: relative;
+                border: 0;
+                top: 0;
+                flex: 0 0 55%;
+            }
+
+            .navbar-nav {
+                padding: 0;
+            }
+
+            .nav-item--active {
+                border-top: 4px solid $color-white;
+            }
+
+            .nav-item--mercury.nav-item--active {
+                border-color: $color-light-blue;
+            }
+
+            .nav-item--venus.nav-item--active {
+                border-color: $color-dark-yellow;
+            }
+
+            .nav-item--earth.nav-item--active {
+                border-color: $color-purple;
+            }
+
+            .nav-item--mars.nav-item--active {
+                border-color: $color-dark-orange;
+            }
+
+            .nav-item--jupiter.nav-item--active {
+                border-color: $color-red;
+            }
+
+            .nav-item--saturn.nav-item--active {
+                border-color: $color-orange;
+            }
+
+            .nav-item--uranus.nav-item--active {
+                border-color: $color-sea-green;
+            }
+
+            .nav-item--neptune.nav-item--active {
+                border-color: $color-blue;
             }
         }
     }

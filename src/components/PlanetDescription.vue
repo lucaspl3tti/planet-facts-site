@@ -75,7 +75,7 @@ defineProps({
                 </p>
             </div>
 
-            <div class="planet-nav planet-nav--desktop d-md-flex">
+            <div class="planet-nav planet-nav--desktop d-none d-md-flex">
                 <button
                     class="btn btn-primary btn--planet-nav btn--overview"
                     :class="[isActiveOverview ? btnActiceClass : '']"

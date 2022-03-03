@@ -3,11 +3,20 @@ import { RouterLink, RouterView } from 'vue-router'
 
 export default {
     methods: {
-        onClickHideNavCollapse() {
-            const navCollapse = document.querySelector('.navbar-collapse');
+      onClickHideNavCollapse() {
+        const navCollapse = document.querySelector('.navbar-collapse');
 
-            navCollapse.classList.remove('show');
-        }
+        navCollapse.classList.remove('show');
+      },
+      onClickNavItem(navEl) {
+        const navItem = document.querySelector(navEl);
+        const activeNavItemCurrent = document.querySelector('.nav-item--active');
+
+        activeNavItemCurrent.classList.remove('nav-item--active');
+        navItem.classList.add('nav-item--active');
+
+        this.onClickHideNavCollapse();
+      },
     },
 }
 </script>
@@ -22,44 +31,44 @@ export default {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid">
-            <li class="nav-item">
+            <li class="nav-item nav-item--mercury nav-item--active">
               <div class="planet-nav-icon planet-mercury"></div>
-              <RouterLink to="/" @click="onClickHideNavCollapse">Mercury</RouterLink>
+              <RouterLink to="/" @click="onClickNavItem('.nav-item--mercury')">Mercury</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--venus">
               <div class="planet-nav-icon planet-venus"></div>
-              <RouterLink to="/venus" @click="onClickHideNavCollapse">Venus</RouterLink>
+              <RouterLink to="/venus" @click="onClickNavItem('.nav-item--venus')">Venus</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--earth">
               <div class="planet-nav-icon planet-earth"></div>
-              <RouterLink to="/earth" @click="onClickHideNavCollapse">Earth</RouterLink>
+              <RouterLink to="/earth" @click="onClickNavItem('.nav-item--earth')">Earth</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--mars">
               <div class="planet-nav-icon planet-mars"></div>
-              <RouterLink to="/mars" @click="onClickHideNavCollapse">Mars</RouterLink>
+              <RouterLink to="/mars" @click="onClickNavItem('.nav-item--mars')">Mars</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--jupiter">
               <div class="planet-nav-icon planet-jupiter"></div>
-              <RouterLink to="/jupiter" @click="onClickHideNavCollapse">Jupiter</RouterLink>
+              <RouterLink to="/jupiter" @click="onClickNavItem('.nav-item--jupiter')">Jupiter</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--saturn">
               <div class="planet-nav-icon planet-saturn"></div>
-              <RouterLink to="/saturn" @click="onClickHideNavCollapse">Saturn</RouterLink>
+              <RouterLink to="/saturn" @click="onClickNavItem('.nav-item--saturn')">Saturn</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--uranus">
               <div class="planet-nav-icon planet-uranus"></div>
-              <RouterLink to="/uranus" @click="onClickHideNavCollapse">Uranus</RouterLink>
+              <RouterLink to="/uranus" @click="onClickNavItem('.nav-item--uranus')">Uranus</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav-item--neptune">
               <div class="planet-nav-icon planet-neptune"></div>
-              <RouterLink to="/neptune" @click="onClickHideNavCollapse">Neptune</RouterLink>
+              <RouterLink to="/neptune" @click="onClickNavItem('.nav-item--neptune')">Neptune</RouterLink>
               <i class="bi bi-chevron-right"></i>
             </li>
           </ul>

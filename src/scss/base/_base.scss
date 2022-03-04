@@ -91,9 +91,16 @@ a {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+    body {
+        padding-bottom: 50px;
+    }
+}
+
+@media (min-width: 1400px) {
     body {
         padding-top: 100px;
+        padding-bottom: 0;
         font-size: $font-size-normal;
     }
 

@@ -1,4 +1,5 @@
 <script>
+import PlanetNavMobile from '@/components/PlanetNav.vue';
 import PlanetDescription from '@/components/PlanetDescription.vue';
 import PlanetInformation from '@/components/PlanetInformation.vue';
 import { mars } from '@/stores/planets.js';
@@ -31,6 +32,7 @@ export default {
     components: {
         PlanetDescription,
         PlanetInformation,
+        PlanetNavMobile,
     },
     methods: {
         onClickOverview() {
@@ -81,25 +83,15 @@ export default {
 
 <template>
     <main :class="[isActiveSurface ? planetClass + ' ' + planetClassSurface : planetClass]">
-        <div class="planet-nav planet-nav--mobile d-md-none">
-            <button
-                class="btn btn-primary btn--planet-nav btn--overview"
-                :class="[isActiveOverview ? btnActiceClass : '']"
-                @click="onClickOverview"
-            >Overview</button>
-
-            <button
-                class="btn btn-primary btn--planet-nav btn--structure"
-                :class="[isActiveStructure ? btnActiceClass : '']"
-                @click="onClickStructure"
-            >Structure</button>
-
-            <button
-                class="btn btn-primary btn--planet-nav btn--surface"
-                :class="[isActiveSurface ? btnActiceClass : '']"
-                @click="onClickSurface"
-            >Surface</button>
-        </div>
+        <PlanetNavMobile
+            :onClickOverview="onClickOverview"
+            :onClickStructure="onClickStructure"
+            :onClickSurface="onClickSurface"
+            :isActiveOverview="isActiveOverview"
+            :isActiveStructure="isActiveStructure"
+            :isActiveSurface="isActiveSurface"
+            :btnActiceClass="btnActiceClass"
+        />
 
         <div class="container">
             <PlanetDescription

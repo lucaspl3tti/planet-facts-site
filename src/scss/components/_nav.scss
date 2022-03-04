@@ -133,7 +133,6 @@
             a {
                 font-size: 11px;
                 letter-spacing: 1px;
-                color: $color-gray;
             }
 
             &:hover,
@@ -141,7 +140,7 @@
                 border-top: 4px solid $color-white;
 
                 a {
-                    color: $color-white;
+                    opacity: 100%;
                 }
             }
         }
@@ -188,7 +187,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     #app {
         .navbar {
             border-bottom: 1px solid rgba(255, 255, 255, 20%);

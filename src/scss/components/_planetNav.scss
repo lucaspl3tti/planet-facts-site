@@ -20,7 +20,7 @@
 }
 
 .planet-nav--mobile {
-    border-bottom: 1px solid $color-light-gray;
+    border-bottom: 1px solid rgba(255, 255, 255, 20%);
 
     .btn--active {
         border-bottom: 4px solid $color-white;
@@ -38,7 +38,7 @@
         .btn {
             width: 281px;
             height: 40px;
-            border: 1px solid $color-light-gray;
+            border: 1px solid rgba(255, 255, 255, 20%);
             border-radius: 0;
             padding: 5px 20px;
             text-align: left;
@@ -57,7 +57,8 @@
         .btn--number {
             margin-right: 12px;
             font-weight: $font-weight-bold;
-            color: $color-gray;
+            color: $color-white;
+            opacity: 50%;
         }
 
         .btn--title {

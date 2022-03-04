@@ -30,7 +30,8 @@
     }
 
     &__source {
-        color: $color-light-gray;
+        color: $color-white;
+        opacity: 50%;
 
         .bi {
             margin-left: 5px;

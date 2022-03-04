@@ -1,5 +1,5 @@
 <script>
-import PlanetNavMobile from '@/components/PlanetNav.vue';
+import PlanetNavMobile from '@/components/PlanetNavMobile.vue';
 import PlanetDescription from '@/components/PlanetDescription.vue';
 import PlanetInformation from '@/components/PlanetInformation.vue';
 import { saturn } from '@/stores/planets.js';

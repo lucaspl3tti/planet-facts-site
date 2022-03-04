@@ -1,5 +1,5 @@
 <script>
-import PlanetNavMobile from '@/components/PlanetNav.vue';
+import PlanetNavMobile from '@/components/PlanetNavMobile.vue';
 import PlanetDescription from '@/components/PlanetDescription.vue';
 import PlanetInformation from '@/components/PlanetInformation.vue';
 import { mercury } from '@/stores/planets.js';
@@ -27,12 +27,12 @@ export default {
             isActiveStructure: false,
             isActiveSurface: false,
             btnActiceClass: 'btn--active',
-            PlanetNavMobile,
         };
     },
     components: {
         PlanetDescription,
         PlanetInformation,
+        PlanetNavMobile,
     },
     methods: {
         onClickOverview() {

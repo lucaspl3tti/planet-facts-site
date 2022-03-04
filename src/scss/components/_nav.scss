@@ -1,7 +1,7 @@
 #app .navbar {
     height: 68px;
     max-width: 100vw;
-    border-bottom: 1px solid $color-light-gray;
+    border-bottom: 1px solid rgba(255, 255, 255, 20%);
     background-color: transparent;
     color: $color-text;
 
@@ -115,7 +115,7 @@
 
         .navbar-collapse {
             height: fit-content;
-            border-bottom: 1px solid $color-light-gray;
+            border-bottom: 1px solid rgba(255, 255, 255, 20%);
             background-color: transparent;
         }
 
@@ -135,6 +135,55 @@
                 letter-spacing: 1px;
                 color: $color-gray;
             }
+
+            &:hover,
+            &--active {
+                border-top: 4px solid $color-white;
+
+                a {
+                    color: $color-white;
+                }
+            }
+        }
+
+        .nav-item--mercury:hover,
+        .nav-item--mercury.nav-item--active {
+            border-color: $color-light-blue;
+        }
+
+        .nav-item--venus:hover,
+        .nav-item--venus.nav-item--active {
+            border-color: $color-dark-yellow;
+        }
+
+        .nav-item--earth:hover,
+        .nav-item--earth.nav-item--active {
+            border-color: $color-purple;
+        }
+
+        .nav-item--mars:hover,
+        .nav-item--mars.nav-item--active {
+            border-color: $color-dark-orange;
+        }
+
+        .nav-item--jupiter:hover,
+        .nav-item--jupiter.nav-item--active {
+            border-color: $color-red;
+        }
+
+        .nav-item--saturn:hover,
+        .nav-item--saturn.nav-item--active {
+            border-color: $color-orange;
+        }
+
+        .nav-item--uranus:hover,
+        .nav-item--uranus.nav-item--active {
+            border-color: $color-sea-green;
+        }
+
+        .nav-item--neptune:hover,
+        .nav-item--neptune.nav-item--active {
+            border-color: $color-blue;
         }
     }
 }
@@ -142,6 +191,8 @@
 @media (min-width: 1200px) {
     #app {
         .navbar {
+            border-bottom: 1px solid rgba(255, 255, 255, 20%);
+
             .container-fluid {
                 justify-content: space-between;
             }
@@ -155,42 +206,6 @@
 
             .navbar-nav {
                 padding: 0;
-            }
-
-            .nav-item--active {
-                border-top: 4px solid $color-white;
-            }
-
-            .nav-item--mercury.nav-item--active {
-                border-color: $color-light-blue;
-            }
-
-            .nav-item--venus.nav-item--active {
-                border-color: $color-dark-yellow;
-            }
-
-            .nav-item--earth.nav-item--active {
-                border-color: $color-purple;
-            }
-
-            .nav-item--mars.nav-item--active {
-                border-color: $color-dark-orange;
-            }
-
-            .nav-item--jupiter.nav-item--active {
-                border-color: $color-red;
-            }
-
-            .nav-item--saturn.nav-item--active {
-                border-color: $color-orange;
-            }
-
-            .nav-item--uranus.nav-item--active {
-                border-color: $color-sea-green;
-            }
-
-            .nav-item--neptune.nav-item--active {
-                border-color: $color-blue;
             }
         }
     }

@@ -61,7 +61,9 @@ h4 {
 }
 
 a {
-    color: $color-gray;
+    color: $color-white;
+    opacity: 50%;
+    font-weight: $font-weight-bold;
 }
 
 .container,
@@ -83,7 +85,8 @@ a {
 
     a {
         &:hover {
-            color: $color-gray;
+            color: $color-white;
+            opacity: 100%;
         }
     }
 }

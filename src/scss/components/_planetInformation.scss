@@ -6,7 +6,7 @@
             justify-content: space-between;
             align-items: center;
             height: 48px;
-            border: 1px solid $color-light-gray;
+            border: 1px solid rgba(255, 255, 255, 20%);
             margin-bottom: 8px;
 
             p,
@@ -19,7 +19,7 @@
             font-size: $font-size-small-mobile;
             font-weight: $font-weight-bold;
             text-transform: uppercase;
-            color: $color-light-gray;
+            color: rgba(255, 255, 255, 50%);
         }
 
         &__text {

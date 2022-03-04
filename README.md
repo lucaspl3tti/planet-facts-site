@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution on frontendmentor.io](https://your-live-site-url.com)
+- Solution URL: [Solution on frontendmentor.io](https://www.frontendmentor.io/solutions/responsive-planet-facts-site-using-vuejs-and-scss-kA_PACpKq)
 - Live Site URL: [Live Site](https://planet-facts-jls.netlify.app/)
 
 ## My process
